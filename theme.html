@@ -37,9 +37,11 @@
     {% else %}
     <div class="wrap">
       <header class="header">
+      <!--
         <div class="avatar">
           <a href="/"><img src="{{ site.avatar }}" class="img-circle" alt="{{ site.author }}" /></a>
         </div>
+         -->
         <div class="nav-logo">
           <div class="logo">
             <h1><a href="/" rel="home">{{ site.name }}</a></h1>
@@ -219,7 +221,7 @@
             <header>
               <h1>{{ link.title }}</h1>
             </header>
-            <p class="post-date">Published by {{ site.author }}, <time datetime="{{ link.created_at }}">{{ link.created_at|date_format }}</time></p>
+            <p class="post-date"> <time datetime="{{ link.created_at }}">{{ link.created_at|date_format }}</time></p>
             {{ link.content }}
             <p class="link-url"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></p>
           </div>
